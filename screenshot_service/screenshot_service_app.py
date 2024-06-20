@@ -114,7 +114,6 @@ def take_screenshot():
     return jsonify(status="success", path=screenshot_path), 200
 
 
-
 @app.route('/screenshots', methods=['POST'])
 def start_crawling():
     data = request.get_json()
